@@ -1,16 +1,24 @@
 [package]
 name = "dhi-xml"
 description = "A library for TSYS DHI (Device Host Interface) XML messages serialization/deserialization"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Tim Gabets <tim@gabets.ru>"]
 edition = "2018"
 readme = "README.md"
 categories = ["development-tools"]
 license = "GPL-3.0"
-keywords = ["payments", "processing", "xml"]
-repository = "https://github.com/timgabets/sp-xml"
-
+keywords = ["payments", "processing", "xml", "dhi", "iso8583"]
+repository = "https://github.com/timgabets/dhi-xml"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+chrono = "0.4.11"
+log = "0.4"
+rand = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+serde_derive = "1.0.106"
+serde_json = "1.0"
+serde-xml-rs = "0.4.0"
+toml = "0.5.6"
+xml-rs = "0.8.0"
