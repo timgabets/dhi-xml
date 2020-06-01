@@ -1,0 +1,16 @@
+[package]
+name = "dhi-xml"
+description = "A library for TSYS DHI (Device Host Interface) XML messages serialization/deserialization"
+version = "0.1.0"
+authors = ["Tim Gabets <tim@gabets.ru>"]
+edition = "2018"
+readme = "README.md"
+categories = ["development-tools"]
+license = "GPL-3.0"
+keywords = ["payments", "processing", "xml"]
+repository = "https://github.com/timgabets/sp-xml"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
