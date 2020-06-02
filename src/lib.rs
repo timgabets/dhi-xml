@@ -85,7 +85,7 @@ mod tests {
     fn dhi_request_new_existing_fields() {
         let iso_data = r#"{
             "i000": "0100",
-            "i002": "521324******0895",
+            "i002": "555544******0895",
             "i007": "Transmission date & time ",
             "i011": "STAN",
             "i012": "hhmmss",
@@ -123,7 +123,7 @@ mod tests {
         <RequestResponse>
             <Header/>
             <Result><Code>0</Code><Description>OK</Description></Result>
-            <ISO8583-87><i000>0110</i000><i002>553691******0961</i002><i003>300000</i003><i004>000000000000</i004><i007>2804114717</i007><i043><![CDATA[IDDQD AM. 341215574     341215574 MSKRU]]></i043><i120>UD038IR0044444CR009ES0048100IA0103510198686</i120></ISO8583-87>"
+            <ISO8583-87><i000>0110</i000><i002>555544******0961</i002><i003>300000</i003><i004>000000000000</i004><i007>2804114717</i007><i043><![CDATA[IDDQD AM. 341215574     341215574 MSKRU]]></i043><i120>UD038IR0044444CR009ES0048100IA0103510198686</i120></ISO8583-87>"
         </RequestResponse>
         "##;
 
@@ -133,7 +133,7 @@ mod tests {
         assert_eq!(resp.res.description, "OK");
 
         assert_eq!(resp.iso_fields["i000"], "0110");
-        assert_eq!(resp.iso_fields["i002"], "553691******0961");
+        assert_eq!(resp.iso_fields["i002"], "555544******0961");
         assert_eq!(resp.iso_fields["i003"], "300000");
         assert_eq!(resp.iso_fields["i004"], "000000000000");
         assert_eq!(resp.iso_fields["i007"], "2804114717");
@@ -146,6 +146,6 @@ mod tests {
             "UD038IR0044444CR009ES0048100IA0103510198686"
         );
 
-        assert_eq!(resp.serialize().unwrap(), "{\"i000\":\"0110\",\"i002\":\"553691******0961\",\"i003\":\"300000\",\"i004\":\"000000000000\",\"i007\":\"2804114717\",\"i043\":\"IDDQD AM. 341215574     341215574 MSKRU\",\"i120\":\"UD038IR0044444CR009ES0048100IA0103510198686\"}");
+        assert_eq!(resp.serialize().unwrap(), "{\"i000\":\"0110\",\"i002\":\"555544******0961\",\"i003\":\"300000\",\"i004\":\"000000000000\",\"i007\":\"2804114717\",\"i043\":\"IDDQD AM. 341215574     341215574 MSKRU\",\"i120\":\"UD038IR0044444CR009ES0048100IA0103510198686\"}");
     }
 }
