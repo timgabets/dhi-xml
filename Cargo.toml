@@ -1,12 +1,12 @@
 [package]
 name = "dhi-xml"
 description = "A library for TSYS DHI (Device Host Interface) XML messages serialization/deserialization"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["Tim Gabets <tim@gabets.ru>"]
 edition = "2018"
 readme = "README.md"
 categories = ["development-tools"]
-license = "GPL-3.0"
+license = "MIT"
 keywords = ["payments", "processing", "xml", "dhi", "iso8583"]
 repository = "https://github.com/timgabets/dhi-xml"
 
