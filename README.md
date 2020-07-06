@@ -1,5 +1,5 @@
 ## DHI XML
-[![License: MIT](https://img.shields.io/crates/l/dhi-xml)]
+![License: MIT](https://img.shields.io/crates/l/dhi-xml)
 [![Build Status](https://travis-ci.org/timgabets/dhi-xml.svg?branch=master)](https://travis-ci.org/timgabets/dhi-xml)
 [![Crates.io](https://img.shields.io/crates/v/dhi_xml.svg)](https://crates.io/crates/dhi-xml)
 
