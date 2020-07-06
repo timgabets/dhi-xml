@@ -1,5 +1,5 @@
 ## DHI XML
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: MIT](https://img.shields.io/crates/l/dhi-xml)]
 [![Build Status](https://travis-ci.org/timgabets/dhi-xml.svg?branch=master)](https://travis-ci.org/timgabets/dhi-xml)
 [![Crates.io](https://img.shields.io/crates/v/dhi_xml.svg)](https://crates.io/crates/dhi-xml)
 
